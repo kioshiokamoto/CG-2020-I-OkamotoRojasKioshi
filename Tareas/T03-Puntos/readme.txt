@@ -1,0 +1,2 @@
+- Se modificó numberOfVertices para dibujar puntos
+- Se cambio vector  m_Vertices por una matriz
