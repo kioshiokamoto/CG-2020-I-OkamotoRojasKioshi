@@ -31,10 +31,21 @@ int numberOfVertices;
 void init(){
 	// Create vertices
 	dimVertices = 3;
-	numberOfVertices = 2;
+	numberOfVertices = 13;
 	GLfloat m_Vertices[numberOfVertices][dimVertices] = {
 			{-0.7f, 0.7f, 0.0f},
-			{-0.7f, 0.5f, 0.0f}
+			{-0.7f, 0.3f, 0.0f},
+			{-0.5f, -0.34f, 0.0f},
+			{-0.3f, 0.3f, 0.0f},
+			{0.0f, 0.0f, 0.0f},
+			{0.3f, 0.75f, 0.0f},
+			{0.3f, 0.3f, 0.0f},
+			{0.5f, 0.52f, 0.0f},
+			{0.7f, 0.75f, 0.0f},
+			{0.7f, 0.3f, 0.0f},
+			{0.7f, -0.2f, 0.0f},
+			{0.623f, -0.27f, 0.0f},
+			{0.546f, -0.34f, 0.0f}
 	};
 
 	glGenVertexArrays(1, &VAO);
@@ -55,7 +66,7 @@ void init(){
 void display(double currentTime) {
 	// Clear the screen
 	// Dark blue background
-	glClearColor(0.0f, 0.0f, 0.5f, 0.0f);
+	glClearColor(1.0f, 0.5f, 0.1f, 0.0f);
 	glClear( GL_COLOR_BUFFER_BIT);
 
 	// 1rst attribute buffer : vertices
@@ -88,7 +99,7 @@ int main( void ){
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE); 	// Resizable option.
 
 	// Open a window and create its OpenGL context
-	window = glfwCreateWindow(800, 800, "Lab01: Draw one Point", NULL, NULL);
+	window = glfwCreateWindow(800, 800, "Okamoto Rojas Kioshi - TAREA 03", NULL, NULL);
 
 	glfwMakeContextCurrent(window);
 
