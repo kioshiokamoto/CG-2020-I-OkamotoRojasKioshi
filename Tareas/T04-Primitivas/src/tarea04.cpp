@@ -156,38 +156,39 @@ void init (GLFWwindow* window) {
 
 	//Generando puntos restantes con operaciones de vectores: GLM y asignacion de colores
     	//Sea P(X) = P(X-1) + t*vec3(x,y,z)
+    	//OBS: t debe ser float  ej: 3.0f
     //Primera figura con P0
-    total[1].posicion=total[0].posicion + 1*vec3(0.4f,-0.4f,0.0f);
+    total[1].posicion=total[0].posicion + 1.0f *vec3(0.4f,-0.4f,0.0f);
     total[1].color=total[0].color;
 
-    total[2].posicion=total[0].posicion + 1*vec3(-0.2f,-0.4f,0.0f);
+    total[2].posicion=total[0].posicion + 1.0f *vec3(-0.2f,-0.4f,0.0f);
     total[2].color=total[0].color;
 
     //Segunda figura con P1
-    total[4].posicion= total[3].posicion + 1*vec3(0.0f,-0.4f,0.0f);
+    total[4].posicion= total[3].posicion + 1.0f *vec3(0.0f,-0.4f,0.0f);
     total[4].color= total[3].color;
 
-	total[5].posicion= total[3].posicion + 1*vec3(0.5f,-0.4f,0.0f);
+	total[5].posicion= total[3].posicion + 1.0f *vec3(0.5f,-0.4f,0.0f);
 	total[5].color= total[3].color;
 
 	//Tercera figura con P2
-	total[7].posicion= total[6].posicion + 1*vec3(-0.3f,-0.4f,0.0f);
+	total[7].posicion= total[6].posicion + 1.0f *vec3(-0.3f,-0.4f,0.0f);
 	total[7].color= total[6].color;
 
-	total[8].posicion= total[6].posicion + 1*vec3(0.3f,-0.4f,0.0f);
+	total[8].posicion= total[6].posicion + 1.0f *vec3(0.3f,-0.4f,0.0f);
 	total[8].color= total[6].color;
 
 	//Tercer figura con P3
-	total[10].posicion= total[9].posicion + 1*vec3(0.0f,-0.4f,0.0f);
+	total[10].posicion= total[9].posicion + 1.0f *vec3(0.0f,-0.4f,0.0f);
 	total[10].color=total[9].color;
 
-	total[11].posicion= total[9].posicion + 1*vec3(0.6f,-0.4f,0.0f);
+	total[11].posicion= total[9].posicion + 1.0f *vec3(0.6f,-0.4f,0.0f);
 	total[11].color=total[9].color;
 
-    total[13].posicion= total[12].posicion + 1*vec3(0.6f,0.0f,0.0f);
+    total[13].posicion= total[12].posicion + 1.0f *vec3(0.6f,0.0f,0.0f);
     total[13].color= total[12].color;
 
-    total[14].posicion= total[12].posicion + 1*vec3(0.6f,-0.4f,0.0f);
+    total[14].posicion= total[12].posicion + vec3(0.6f,-0.4f,0.0f);
 	total[14].color= total[12].color;
 
 
