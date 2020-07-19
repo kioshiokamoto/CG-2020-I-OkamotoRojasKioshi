@@ -159,7 +159,7 @@ void init (GLFWwindow* window) {
     	//OBS: t debe ser float  ej: 3.0f
     //Primera figura con P0
     total[1].posicion=total[0].posicion + 1.0f *vec3(0.4f,-0.4f,0.0f);
-    total[1].color=total[0].color;
+    total[1].color=vec3(0.0f, 0.0f, 0.0f);
 
     total[2].posicion=total[0].posicion + 1.0f *vec3(-0.2f,-0.4f,0.0f);
     total[2].color=total[0].color;
